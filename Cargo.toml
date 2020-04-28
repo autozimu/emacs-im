@@ -11,4 +11,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 emacs = "*"
-im = { path = "../im-switch-macOS" }
+im = { path = "../im-switch" }

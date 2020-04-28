@@ -1,12 +1,13 @@
-use emacs::{defun, Env, Result, Value};
+use emacs::{defun, Env, Result};
 
 // Emacs won't load the module without this.
 emacs::plugin_is_GPL_compatible!();
 
 // Register the initialization hook that Emacs will call when it loads the module.
 #[emacs::module]
-fn init(env: &Env) -> Result<Value<'_>> {
-    env.message("eim finished loading!")
+fn init(_env: &Env) -> Result<()> {
+    // env.message("eim finished loading!")
+    Ok(())
 }
 
 /// Get current input source id.

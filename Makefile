@@ -8,4 +8,4 @@ dev:
 
 install:
 	cargo build --release
-	ln -s ${PWD}/target/release/libeim.dylib /usr/local/lib/emacs/eim.so
+	ln -snf ${PWD}/target/release/libeim.dylib /usr/local/lib/emacs/

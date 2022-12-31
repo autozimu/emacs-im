@@ -19,5 +19,6 @@ fn get_input_source() -> Result<String> {
 /// Set input source.
 #[defun]
 fn set_input_source(language: String) -> Result<()> {
-    Ok(im::set_input_source(&language))
+    im::set_input_source(&language);
+    Ok(())
 }
